@@ -4,11 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Eldritch Horror Codejam</title>
     <link rel="stylesheet" href="./scc/reset.css">
     <link rel="stylesheet" href="./scc/style.css">
+    <link rel="icon" href="./assets/png-images/favicon01.ico">
 </head>
-<body>
-    
+<body class="body">
+    <header class="header">
+       <div class="wrapper">
+            <div class="header-title">
+                <h1>Древний УЖАС!</h1>
+            </div>
+       </div>
+    </header>
+    <section class="select-eldritch">
+        <div class="wrapper">
+            <div class="select-title">
+               <h2>Выберите ДРЕВНЕГО!</h2> 
+            </div>
+            <ul class="select-list">
+                <li class="one-eldritch"><img src="../Eldritch-codejam/assets/Ancients/Cthulthu.png" alt="Cthulthu card picture"></li>
+                <li class="one-eldritch"><img src="../Eldritch-codejam/assets/Ancients/ShubNiggurath.png" alt="ShubNiggurath card picture"></li>
+                <li class="one-eldritch"><img src="../Eldritch-codejam/assets/Ancients/IogSothoth.png" alt="IogSothoth card picture"></li>
+                <li class="one-eldritch"><img src="../Eldritch-codejam/assets/Ancients/Azathoth.png" alt="Azathoth card picture"></li>
+            </ul>
+        </div>
+    </section>
+    <section class="select-level">
+        <div class="wrapper">
+            <div class="select-title">
+               <h2>Выберите уровень сложности!</h2> 
+            </div>
+            <div class="level-buttons">
+                <button class="button">Очень легкий</button>
+                <button class="button">Легкий</button>
+                <button class="button">Средний</button>
+                <button class="button">Высокий</button>
+                <button class="button">Очень высокий</button>
+            </div>
+        </div>
+    </section>
+   <section class="shuffle-deck">
+        <div class="wrapper">
+            <div class="select-title">
+                <h2>Создаем колоду</h2> 
+             </div>  
+             <div class="shuffle-deck-button">
+                <button class="button">ЗАМЕШАТЬ!</button>
+             </div>
+        
+             <div class="game">
+                 <div class="etaps">
+                    <div class="etap-name">
+                        <h3 class="etap-title">Этап I</h3>
+                        <h3 class="etap-title">Этап II</h3>
+                        <h3 class="etap-title">Этап III</h3>
+                    </div>
+                    <div class="etap-number">
+                        <div class="etap-line one">
+                            <span class="one-etap green"></span>
+                            <span class="one-etap  broun"></span>
+                            <span class="one-etap blu"></span>
+                        </div>
+                        <div class="etap-line two">
+                            <span class="one-etap green"></span>
+                            <span class="one-etap broun"></span>
+                            <span class="one-etap blu"></span>
+                        </div>
+                        <div class="etap-line three">
+                            <span class="one-etap green"></span>
+                            <span class="one-etap broun"></span>
+                            <span class="one-etap blu"></span>
+                        </div>
+                    </div>
+                 </div>
+
+                <div class="play">
+                     <div class="deck">
+                        <button class="batton-card">Играть карту</button>
+                     </div>
+                     <div class="card">
+                        <span class="img-card"><img src="../Eldritch-codejam/assets/Ancients/Azathoth.png" alt="Game card"></span>
+                     </div>
+                </div>
+            </div>
+        </div>
+   </section>
+
 </body>
 </html>
