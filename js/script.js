@@ -14,23 +14,9 @@ ancients.azathoth.plaseCard = document.getElementById('azathoth');
 console.log ("ancients");
 console.log (ancients);
 
-
   console.log ("ancients.shubNiggurath.firstStage");
   console.log (ancients.shubNiggurath.firstStage);
   console.log (ancients.shubNiggurath.firstStage.greenCards);
-
-
-  console.log ("ancients.iogSothoth.firstStage");
-  console.log (ancients.iogSothoth.firstStage);
-  console.log (ancients.iogSothoth.firstStage.greenCards);
-
-  console.log ("ancients.azathoth.firstStage");
-  console.log (ancients.azathoth.firstStage);
-  console.log (ancients.azathoth.firstStage.greenCards);
-
-let activetedCard = () => {
-  console.log (this);
-}
 
 // Определяем ВРАГА (древнего) - enemy
 let enemy;
@@ -83,8 +69,59 @@ selectedEnemy ();
 //Определяем уровень сложности
 
 let level;
-let isLevelselected = false
+let isLevelselected = false;
 
+const levelButtons = [];
+levelButtons[0] = document.getElementById('very-easy');
+levelButtons[1] = document.getElementById('easy');
+levelButtons[2] = document.getElementById('normal');
+levelButtons[3] = document.getElementById('hard');
+levelButtons[4] = document.getElementById('very-hard');
 
+console.log(levelButtons);
+
+function hiddenLevel () {
+  if (!isLevelselected){      
+      for (let lev=0; lev <=4; lev++){
+          if (lev !== level) {
+            console.log(lev);
+            console.log(levelButtons[lev]);
+            levelButtons[lev].classList.add ('passive');
+          }
+        }
+  } else{
+      for (let lev=0; lev <=4; lev++){
+        if (lev !== level) {
+        console.log(lev);
+        console.log(levelButtons[lev]);
+        levelButtons[lev].classList.remove('passive');
+        }
+     }
+    }
+  }
+
+function selectedLevel () {
+    for (let lev=0; lev <=4; lev++) {
+        console.log(levelButtons[lev]);
+        levelButtons[lev].addEventListener('click',  {
+          handleEvent(event) {
+            if (!isLevelselected) {
+            event.currentTarget.classList.add('activ-button');
+            level = lev;
+            console.log (level);
+            hiddenLevel ()
+            isLevelselected= true;
+            }else {
+              event.currentTarget.classList.remove('activ-button'); 
+              hiddenLevel (); 
+              isLevelselected = false;
+            }
+          }
+        });
+    };
+    return level;
+  }
+
+  selectedLevel ();
 
 
