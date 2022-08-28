@@ -90,7 +90,7 @@
 
 /* For section select-eldritch  */
 .header-title {
-    width: 80%;
+    width: 60%;
     padding: 10px;
     margin:20px auto;
     text-align: center;
@@ -408,4 +408,5 @@ img {
     width: 50px;
     height: 50px;
     background-color: #FFFFFF;
+     margin:0 20px;
  }
