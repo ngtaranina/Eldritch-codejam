@@ -1,3 +1,6 @@
+#https://github.com/ngtaranina/Eldritch-codejam/
+
+
 # Eldritch Horror Codejam
 
 ## Описание проекта
