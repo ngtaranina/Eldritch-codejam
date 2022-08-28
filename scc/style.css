@@ -47,7 +47,7 @@
  
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: nowrap; 
     overflow-x: hidden;
     margin: auto;         /* для центрирования в браузере*/
@@ -80,9 +80,17 @@
     margin:0 auto;
 }
 
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px, 50px;
+}
+
 /* For section select-eldritch  */
 .header-title {
-    width: 70%;
+    width: 80%;
     padding: 10px;
     margin:20px auto;
     text-align: center;
@@ -175,8 +183,62 @@ img {
     background-color:#6dbfce;
   }
 
+  .shuffle-deck-button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+  }
+
+  .button-shuffle {
+    width: 15%;
+    height: 50px;
+    margin: 0;
+        
+    font-family: 'Cormorant Infant', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    
+    background-color: #0D606F;
+    border-width: 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    transition: background-color 0.5s;
+  }
+  .button-shuffle:hover {
+    cursor: pointer;
+    background-color:#6dbfce;
+  }
+
+    .button-shuffle-restart{
+        width: 15%;
+        height: 50px;
+        margin: 0;
+            
+        font-family: 'Cormorant Infant', sans-serif;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 16px;
+        color: #FFFFFF;
+        
+        background-color: #570606;
+        border-width: 0;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+        transition: background-color 0.5s;
+
+        visibility: hidden;
+    }
+
+    .button-shuffle-restart:hover {
+        cursor: pointer;
+        background-color:#ce6d7d;
+      }
+
   .activ-button {
-    border: 2px solid black;
+    border: 3px solid black;
+    box-shadow: 4px 4px 4px rgba(139, 202, 221, 0.37)
   }
 
 
@@ -248,10 +310,21 @@ img {
 }
 
 .one-etap {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
     width: 17%;
     height: 80%;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 5px;
+       
+    font-family: 'Cormorant Infant', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+
 
 }
 
@@ -263,7 +336,7 @@ img {
     background-color: rgb(94, 45, 4);
 }
 
-.blu {
+.blue {
     background-color: rgb(8, 17, 143);
 }
 
@@ -286,8 +359,10 @@ img {
    
  }
 
- .batton-card{
-     width: 80%;
+ .button-card{
+   /*  width: 80%;*/
+     max-width: 285px;
+     max-height: 419px;
      background: url("../assets/mythicCardBackground.png") no-repeat center; 
 
     font-family: 'Cormorant Infant', sans-serif;
@@ -298,6 +373,10 @@ img {
     color: #FFFFFF;
     
  }
+    .button-card-end{
+        background:none;
+        border: none;
+    }
 
  .card {
     display: flex;
@@ -308,6 +387,25 @@ img {
    
  }
 
- .non-play {
+ .img-card {
     visibility: hidden;
+ }
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.year{
+    font-family: 'Cormorant Infant', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px black;
+    color: #FFFFFF; 
+}
+ .footer-link{
+    width: 50px;
+    height: 50px;
+    background-color: #FFFFFF;
  }
